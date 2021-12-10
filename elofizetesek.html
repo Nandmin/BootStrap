@@ -4,12 +4,13 @@
     <title>Előfizetések</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://kit.fontawesome.com/f32a0357c7.js" crossorigin="anonymous"></script>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
-  <body>
+  <body class="d-flex flex-column min-vh-100">
       <!-- -sm: a töréspont helyét mutatja, vagyis melyik felbontásnál vált (sm: 576px) -->
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <!-- Mindig a cégnek a logója és a főoldalra mutasson -->
@@ -53,8 +54,155 @@
             </div>
         </nav>      
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <header>
+            <section>
+                <div class="container">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb bg-white mb-0">
+                        <li class="breadcrumb-item"><a href="./index.html">Főoldal</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Előfizetések</li>
+                        </ol>
+                    </nav>
+                </div>
+            </section>
+            <section>
+                <div class="jumbotron jumbotron-fluid mb-0">
+                    <div class="container">
+                    <h1 class="display-4">Fluid jumbotron</h1>
+                    <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quae iure ipsa dolor vero ipsam voluptatum perspiciatis iusto, deserunt ad veniam omnis. Iusto at quae earum nulla a, ullam illo?</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="alert alert-success text-center mb-0" role="alert">
+                    A simple success alert—check it out!
+                  </div>
+            </section>
+        </header>
+
+        <main>
+            <section class="py-5">
+                <div class="container">
+                    <!-- flex-column flex-lg-row: egymás alá és egymás mellé reszponzív rendezés esetén -->
+                    <div class="card-deck flex-column flex-lg-row ">
+                        <div class="card shadow-sm mt-4">
+                            <div class="card-header text-center">
+                                <h2 class="font-weight-normal">Ingyenes</h2>
+                            </div>
+                            <div class="card-body text-center d-flex flex-column">
+                                <h3>0 HUF <small class="text-muted">/ hó</small></h3>
+                                <ul class="list-unstyled my-4">
+                                    <li>lorem ipsum</li>
+                                    <li>lorem ipsum</li>
+                                    <li>lorem ipsum</li>
+                                    <li>lorem ipsum</li>
+                                </ul>
+                                <!-- lg: nagy méretű gomb 
+                                block: a teljes helyet kitölti -->
+                                <button class="btn btn-outline-primary btn-lg btn-block mt-auto">Előfizetések</button>
+                            </div>
+                        </div>
+                        <div class="card shadow-lg">
+                            <div class="card-header text-center">
+                                <h2 class="font-weight-normal">Alap</h2>
+                            </div>
+                            <div class="card-body text-center d-flex flex-column">
+                                <h3>10.000 HUF <small class="text-muted">/ hó</small></h3>
+                                <ul class="list-unstyled my-4">
+                                    <li>lorem ipsum</li>
+                                    <li>lorem ipsum</li>
+                                    <li>lorem ipsum</li>
+                                    <li>lorem ipsum</li>
+                                    <li>lorem ipsum</li>
+                                </ul>
+                                <!-- lg: nagy méretű gomb 
+                                block: a teljes helyet kitölti -->
+                                <button class="btn btn-primary btn-lg btn-block mt-auto">Előfizetések</button>
+                            </div>
+                        </div>
+                        <div class="card shadow-sm mt-4">
+                            <div class="card-header text-center">
+                                <h2 class="font-weight-normal">Profi</h2>
+                            </div>
+                             <div class="card-body text-center d-flex flex-column">
+                                <h3>15.000 HUF <small class="text-muted">/ hó</small></h3>
+                                <ul class="list-unstyled my-4">
+                                    <li>lorem ipsum</li>
+                                    <li>lorem ipsum</li>
+                                    <li>lorem ipsum</li>
+                                    <li>lorem ipsum</li>
+                                    <li>lorem ipsum</li>
+                                </ul>
+                                <!-- lg: nagy méretű gomb 
+                                block: a teljes helyet kitölti -->
+                                <button class="btn btn-outline-primary btn-lg btn-block  mt-auto">Előfizetések</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="py-4 text-white text-center text-md-left bg-dark mt-auto">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                  <h5 class="mb-4">Navigáció</h5>
+                  <nav class="nav flex-column">
+                    <a class="text-white mb-2" href="./index.html">Főoldal</a>
+                    <a class="text-white mb-2" href="./blog.html">Blog</a>
+                    <a class="text-white mb-2" href="./tanfolyamlista.html">Tanfolyamlista</a>
+                    <a class="text-white mb-2" href="./elofizetesek.html">Előfizetések</a>
+                    <a class="text-white mb-2" href="./oktatok.html">Oktatók</a>
+                    <a class="text-white mb-2" href="./gyik.html">Kérdések és válaszok</a>
+                    <a class="text-white mb-2" href="./kapcsolat.html">Kapcsolat</a>
+                  </nav>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                  <h5 class="mb-4">Legfrissebb bejegyzések</h5>
+                  <nav class="nav flex-column">
+                    <a class="text-white mb-2" href="#">Lorem ipsum</a>
+                    <a class="text-white mb-2" href="#">Lorem ipsum</a>
+                    <a class="text-white mb-2" href="#">Lorem ipsum</a>
+                    <a class="text-white mb-2" href="#">Lorem ipsum</a>
+                    <a class="text-white mb-2" href="#">Lorem ipsum</a>
+                    <a class="text-white mb-2" href="#">Lorem ipsum</a>
+                    <a class="text-white mb-2" href="#">Lorem ipsum</a>
+                   
+                  </nav>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                  <address>
+                    WebXpander Zrt<br>
+                    9999 Valaholfalva Névtelen u. 1.
+                  </address>
+                  <!-- ikonok középre igazítása -->
+                  <nav class="nav justify-content-center justify-content-md-start">
+                    <!-- a nav hatására a display flex-re változik
+                    aria...: felolvasó programok elől elrejtve
+                    fa-3x: ikonméret 3szoros méretben -->
+                    <!-- class után tooltip (placement mondja meg a helyet, hogy hol) -->
+                    <a href="#" class="text-white mr-2" data-toggle="tooltip" data-placement="top" title="FaceBook">
+                      <i class="fab fa-facebook-square fa-3x" aria-hidden="true"></i>
+                      <span class="sr-only">Link a FaceBook-ra</span>
+                    </a>
+                    <a href="#" class="text-white mr-2" data-toggle="tooltip" data-placement="top" title="Twitter">
+                      <i class="fab fa-twitter-square fa-3x" aria-hidden="true"></i>
+                      <span class="sr-only">Link a Twitter oldalárara</span>
+                    </a>
+                    <a href="#" class="text-white mr-2" data-toggle="tooltip" data-placement="top" title="LinkedIn">
+                      <i class="fab fa-linkedin fa-3x" aria-hidden="true"></i>
+                      <span class="sr-only">Link a LinkedIn oldalra</span>
+                    </a>
+                  </nav>
+                </div>
+                <div class="col-md-4"></div>
+              </div>
+            </div>
+          </footer>
+  
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
