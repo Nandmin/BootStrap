@@ -52,7 +52,57 @@
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </form>
             </div>
-        </nav>      
+        </nav>
+        <main>
+            <section class="py-5">
+                <div class="container">
+                    <div class="media mb-5">
+                        <!-- Media element -->
+                        <!-- Alapesetben nem jelenik meg a kép, de md törésponttól flexbox stílusban -->
+                        <img class="d-none d-md-flex" src="./img/blog/javascript-e2e-teszteles.jpg" alt="javascript-e2e-teszteles">
+                        <div class="media-body pl-3">
+                            <h2>Javascript e2e teszteles</h2>
+                            <!-- small: apróbetűs megjelenítés -->
+                            <datetime class="small">2021. december 13.</datetime>
+                            <strong aria-hidden="true">&CenterDot;</strong>
+                            <small>5 perc</small>
+                            <strong aria-hidden="true">&CenterDot;</strong>
+                            <small>8 hozzászólás</small>
+                            <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam et doloremque alias est necessitatibus perferendis, 
+                                iusto magnam libero repellendus deleniti, ullam earum inventore provident totam assumenda. Vel atque labore aut!</p>
+                            <a href="">Tovább olvasom</a>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <!-- Media element -->
+                        <!-- Alapesetben nem jelenik meg a kép, de md törésponttól flexbox stílusban -->
+                        <img class="d-none d-md-flex" src="./img/blog/tokeletes-munkahely.jpg" alt="Tökéletes munkakhely">
+                        <div class="media-body pl-3">
+                            <h2>Tökéletes munkakhely</h2>
+                            <!-- small: apróbetűs megjelenítés -->
+                            <datetime class="small">2021. december 13.</datetime>
+                            <strong aria-hidden="true">&CenterDot;</strong>
+                            <small>5 perc</small>
+                            <strong aria-hidden="true">&CenterDot;</strong>
+                            <small>8 hozzászólás</small>
+                            <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam et doloremque alias est necessitatibus perferendis, 
+                                iusto magnam libero repellendus deleniti, ullam earum inventore provident totam assumenda. Vel atque labore aut!</p>
+                            <a href="">Tovább olvasom</a>
+                        </div>
+                    </div>
+                    <!-- középre igazítás: ha flexbox lenne, akkor csak justify-content-center, ha block akkor kell még a d-flex is -->
+                    <nav aria-label="Blog lapozósáv" class="mt-5 d-flex justify-content-center">
+                        <ul class="pagination">
+                          <li class="page-item"><a class="page-link" href="#">Előző</a></li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item"><a class="page-link" href="#">Következő</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+        </main>
 
         <footer class="py-4 text-white text-center text-md-left bg-dark mt-auto">
             <div class="container">
