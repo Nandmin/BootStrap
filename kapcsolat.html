@@ -53,6 +53,7 @@
                 </form>
             </div>
         </nav>
+
         <main>
           <secton class="py-5">
             <div class="container">
@@ -73,13 +74,24 @@
                       <!-- cols megadásával lehet szabályozni a box magasságát -->
                       <textarea name="message" id="message" rows="5" class="form-control" required placeholder="Üzenet helye..."></textarea>
                     </div>
-                    <div class="input-group">
+                    <div class="input-group mb-3">
                       <select name="topic" id="topic" class="form-control" required>
                         <option value="Technikai">Technikai</option>
                         <option value="Számlázási">Számlázási</option>
                         <option value="Egyéb">Egyéb</option>
                       </select>
+                      <!-- 
+                        append: a box után tudunk elhelyezni vmit 
+                        prepend: a box elé, bal oldalra tudunk elhelyezni vmit -->
+                      <div class="input-group-append">
+                        <label for="topic" class="input-group-text">Kérdés</label>
+                      </div>
                     </div>
+                    <div class="form-check mb-3">
+                      <input type="checkbox" name="newletter" id="newletter" class="form-check-input" checked>
+                      <label for="newsletter" class="font-weight-bold form-check-label">Feliratkozom a hírlevélre</label>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-lg">Küldés</button>
                   </form>
                 </div>
                 <div class="col-md-6"></div>
@@ -87,6 +99,7 @@
             </div>
           </secton>
         </main>
+
         <footer class="py-4 text-white text-center text-md-left bg-dark mt-auto">
             <div class="container">
               <div class="row">
